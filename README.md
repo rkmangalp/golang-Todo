@@ -74,12 +74,6 @@ Here is a list of available API endpoints:
 | PUT    | /todo/{id}    | Update a TODO item          |
 | DELETE | /todo/{id}    | Delete a TODO item          |
 
-### Example Requests
-
-- **Fetch Todos**
-
-  ```sh
-  curl -X GET http://localhost:9000/todo
 
 # Example Requests
 
@@ -95,21 +89,25 @@ Retrieve all TODO items:
 
 ### Create a Todo
 
+Creates a New to do
+
   ```sh
   curl -X POST http://localhost:9000/todo -H "Content-Type: application/json" -d '{"title": "New Todo"}'
   ```
 ### Update a Todo
-### Update an existing TODO item by ID:
+
+Update an existing TODO item by ID:
 
   ```sh
   curl -X PUT http://localhost:9000/todo/{id} -H "Content-Type: application/json" -d '{"title": "Updated Todo", "completed": true}'
   ```
 ### Delete a Todo
-### Delete a TODO item by ID:
+
+Delete a TODO item by ID:
 
   ```sh
   curl -X DELETE http://localhost:9000/todo/{id}
-  ```
+
 ## Project Structure
 
 - **`main.go`** - Main application file containing server setup and route handling.
