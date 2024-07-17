@@ -107,7 +107,7 @@ Delete a TODO item by ID:
 
   ```sh
   curl -X DELETE http://localhost:9000/todo/{id}
-
+  ```
 ## Project Structure
 
 - **`main.go`** - Main application file containing server setup and route handling.
